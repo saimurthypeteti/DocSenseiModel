@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="96" viewBox="0 0 320 96" role="img" aria-label="DocSensei logo">
+  <rect width="320" height="96" rx="16" fill="#0f172a"/>
+  <rect x="24" y="18" width="52" height="60" rx="8" fill="#f8fafc"/>
+  <path d="M62 18v16h14" fill="#cbd5e1"/>
+  <path d="M36 42h28M36 54h28M36 66h18" stroke="#0f172a" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="96" cy="48" r="14" fill="#22c55e"/>
+  <path d="M90 48l4 4 9-10" stroke="#052e16" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="124" y="45" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700" fill="#f8fafc">DocSensei</text>
+  <text x="126" y="66" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#cbd5e1">Grounded document intelligence</text>
+</svg>

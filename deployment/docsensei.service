@@ -1,0 +1,14 @@
+[Unit]
+Description=DocSensei Streamlit RAG Application
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=/home/ubuntu/DocSensei
+Environment="PATH=/home/ubuntu/DocSensei/.venv/bin"
+ExecStart=/home/ubuntu/DocSensei/.venv/bin/streamlit run app.py --server.address 0.0.0.0 --server.port 8501
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
