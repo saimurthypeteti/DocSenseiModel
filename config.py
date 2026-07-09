@@ -1,7 +1,9 @@
 """Application configuration for DocSensei."""
 
+
 from functools import lru_cache
 from pathlib import Path
+import tempfile
 
 from dotenv import load_dotenv
 from pydantic import Field
@@ -19,8 +21,8 @@ class Settings(BaseSettings):
     llm_api_key: str = ""
     llm_base_url: str | None = None
     llm_temperature: float = 0.0
-    chroma_persist_dir: Path = Path("vectorstore")
-    upload_dir: Path = Path("uploads")
+    chroma_persist_dir: Path = Path(tempfile.gettempdir()) / "vectorstore"
+    upload_dir: Path = Path(tempfile.gettempdir()) / "uploads"
     top_k: int = Field(default=4, ge=1, le=20)
     embedding_model: str = "sentence-transformers/all-MiniLM-L6-v2"
     log_level: str = "INFO"
